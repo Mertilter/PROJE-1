@@ -7,51 +7,170 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <style>
+      .navbar-nav{
+        margin-left: auto;
+      }
+    </style>
+    <title>Kodluyoruz</title>
   </head>
   <body>
-    <main class="container mt-3">
-      <div class="row">
-        <section class="col-sm-8">
-          <article class="row mb-3">
-            <div class="col-sm-8 bg-primary">
-              <h2>Lorem, ipsum.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vero quasi ducimus hic error ad voluptates qui debitis nihil dolor, veritatis accusantium eos sit corporis. Nobis omnis nisi facere aliquid.</p>
-            </div>
-            <div class="col-sm-4">
-              <img class="w-100" src="https://picsum.photos/id/33/400/300" alt="">
-            </div>
-          </article>
-          <article class="row mb-3">
-            <div class="col-sm-8 bg-primary">
-              <h2>Lorem, ipsum.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vero quasi ducimus hic error ad voluptates qui debitis nihil dolor, veritatis accusantium eos sit corporis. Nobis omnis nisi facere aliquid.</p>
-            </div>
-            <div class="col-sm-4">
-              <img class="w-100" src="https://picsum.photos/id/21/400/300" alt="">
-            </div>
-          </article>
-          <article class="row mb-3">
-            <div class="col-sm-8 bg-primary">
-              <h2>Lorem, ipsum.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vero quasi ducimus hic error ad voluptates qui debitis nihil dolor, veritatis accusantium eos sit corporis. Nobis omnis nisi facere aliquid.</p>
-            </div>
-            <div class="col-sm-4">
-              <img class="w-100" src="https://picsum.photos/400/300" alt="">
-            </div>
-          </article>
-        </section>
-        <aside class="col-sm-4">
-          <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Autem, officiis!</li>
-            <li>Qui, facilis.</li>
-            <li>Unde, itaque?</li>
-          </ul>
-        </aside>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Kodluyoruz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+            <a class="nav-link" href="#">Hakkımızda</a>
+            <a class="nav-link" href="#">Eğitimmler</a>
+            <a class="nav-link" href="#">İletişim</a>
+          </div>
+        </div>
       </div>
-    </main>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/id/227/1600/600" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/17/1600/600" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/27/1600/600" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="w-100 img-thumbnail" src="https://picsum.photos/id/27/600/400" alt="">
+        </div>
+        <div class="col-sm-6">
+          <h2>Hakkımızda</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, voluptatibus?</p>
+          <p>Modi labore ipsum nesciunt iure culpa vero excepturi cumque sed!</p>
+          <p>Non ab, quia porro cum commodi incidunt rem quisquam laborum!</p>
+          <p>Ad voluptatibus saepe magnam, vel suscipit dolor ratione repudiandae cumque!</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://picsum.photos/id/17/400/250" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ürün 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">incele</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://picsum.photos/id/77/400/250" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ürün 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">İncele</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://picsum.photos/id/99/400/250" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ürün 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">İncele</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-12">
+          <h5>Resimler</h5>
+        </div>
+        <div class="col-sm">
+          <img src="https://picsum.photos/id/91/400/250" alt="" class="w-100 img-thumbnail">
+        </div>
+        <div class="col-sm">
+          <img src="https://picsum.photos/id/39/400/250" alt="" class="w-100 img-thumbnail">
+        </div>
+        <div class="col-sm">
+          <img src="https://picsum.photos/id/49/400/250" alt="" class="w-100 img-thumbnail">
+        </div>
+        <div class="col-sm">
+          <img src="https://picsum.photos/id/51/400/250" alt="" class="w-100 img-thumbnail">
+        </div>
+        <div class="col-sm">
+          <img src="https://picsum.photos/id/76/400/250" alt="" class="w-100 img-thumbnail">
+        </div>
+      </div>
+       <div class="bg-dark text-light">
+       <footer class="container py-5 mt-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <h5>Kodluyoruz</h5>
+            <small class="d-block mb-3 text-muted">© 2017–2021</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Cool stuff</a></li>
+              <li><a class="link-secondary" href="#">Random feature</a></li>
+              <li><a class="link-secondary" href="#">Team feature</a></li>
+              <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+              <li><a class="link-secondary" href="#">Another one</a></li>
+              <li><a class="link-secondary" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Resource name</a></li>
+              <li><a class="link-secondary" href="#">Resource</a></li>
+              <li><a class="link-secondary" href="#">Another resource</a></li>
+              <li><a class="link-secondary" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Business</a></li>
+              <li><a class="link-secondary" href="#">Education</a></li>
+              <li><a class="link-secondary" href="#">Government</a></li>
+              <li><a class="link-secondary" href="#">Gaming</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Team</a></li>
+              <li><a class="link-secondary" href="#">Locations</a></li>
+              <li><a class="link-secondary" href="#">Privacy</a></li>
+              <li><a class="link-secondary" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer></div>
+    
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
